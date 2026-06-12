@@ -41,7 +41,7 @@ export default function UpdateTask(){
                 <input value={taskData.title || ''} onChange={(event)=>setTaskData({...taskData,title:event.target.value})} type="text" name="title" placeholder="Enter task title"/>
                 <label htmlFor="">Description</label>
                 <textarea value={taskData.description || ''} onChange={(event)=>setTaskData({...taskData,description:event.target.value})} rows={4} name="description" placeholder="Enter task description " id=""></textarea>
-                <button onClick={UpdateTask} className="submit">Update task</button>
+                <button onClick={UpdateTask} className="submit">Update Task</button>
         </div>
     )
 }
